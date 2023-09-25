@@ -46,18 +46,18 @@ figcaption {
     right: 10%;
 }
 
-p {
+h2 {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    line-height: 2rem;
-    padding: 1rem;
-    margin: 1rem;
+    align-items: flex-start;
+    justify-content: right;
 }
 
 section {
     width: 100%;
-    margin: 5px;
+    margin: 10px;
+    padding: 1rem;
+    border-left: 3px solid;
+    border-color: steelblue;
 }
 /* H1 in header style */
 .name {
@@ -79,29 +79,34 @@ section {
 /* Entire area flex behavior */
 .container {
     display: flex;
+    align-items: baseline;
     width: 100%;
 }
 /*Left column*/
 .section-left {
-    border-right: 3px solid;
-    border-color: steelblue;
     padding: 1rem;
-    width: 250px;
+    width: 30%;
     text-align: right;
 }
 
 .paragraph {
     display: flex;
     width: 100%;
+    padding: 1rem;
     justify-content: flex-start;
     line-height: 2rem;
-    padding: 1rem;
-    margin: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 50%;
 }
 
 .project-1 {
     display: flex;
     width: 100%;
+    border: 5px solid lightskyblue;
     position: relative;
 }
 
@@ -110,18 +115,18 @@ section {
     background-size: contain;
     max-width: 100%;
     max-height: 100%;
-    border: 5px solid lightskyblue;
 }
 
 .label-1 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: lightskyblue;
     color: #13293d;
     padding: 5px;
     width: auto;
-    border: 3px solid lightskyblue;
-    justify-content: center;
     position: absolute;
+    top: 30%;
     bottom: 30%;
     left: 0%;
 }
@@ -129,6 +134,7 @@ section {
 .project-2 {
     display: flex;
     width: 50%;
+    border: 5px solid lightskyblue;
     position: relative;
 }
 
@@ -137,17 +143,18 @@ section {
     background-size: contain;
     max-width: 100%;
     max-height: 100%;
-    border: 5px solid lightskyblue;
 }
 
 .label-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: lightskyblue;
     color: #13293d;
     padding: 5px;
-    border: 3px solid lightskyblue;
     width: auto;
-    justify-content: center;
     position: absolute;
+    top: 30%;
     bottom: 30%;
     left: 0%;
 }
@@ -156,6 +163,7 @@ section {
     display: flex;
     width: 50%;
     position: relative;
+    border: 5px solid lightskyblue;
 }
 
 .project-3 img {
@@ -163,20 +171,21 @@ section {
     background-size: contain;
     max-width: 100%;
     max-height: 100%;
-    border: 5px solid lightskyblue;
 }
 
 .label-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: lightskyblue;
     color: #13293d;
-    padding: 5px;
-    border: 3px solid lightskyblue;
+    padding: 1rem;
     width: auto;
-    justify-content: center;
     position: absolute;
+    top: 30%;
     bottom: 30%;
     left: 0%;
-}
+    }
 
 .overlay:hover {
     opacity: 1;
