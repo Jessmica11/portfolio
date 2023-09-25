@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    width: auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background: #13293d;
+    color: #fff;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+nav {
+    float: right;
+    height: 50%;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+nav a {
+    color: lightskyblue;
+    font-weight: bolder;
+    padding: 20px;
+    text-decoration: underline;
+    text-align: right;
+}
+
+figure {
+    justify-content: center;
+    position: relative;
+}
+
+figcaption {
+    background-color: lightskyblue;
+    padding: 10px;
+    float: right;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+}
+
+p {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+section {
+    width: 100%;
+    margin: 5px;
+}
+/* H1 in header style */
+.name {
+    float: left;
+    text-align: right;
+    padding: 1rem;
+    background-color: lightskyblue;
+    color: #13293d;
+    margin: 5px 5px 5px 10px;
+    width: 30%;
+}
+/* Hero image style */
+.hero {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    position: relative;
+}
+/* Entire area flex behavior */
+.container {
+    display: flex;
+    width: 100%;
+}
+/*Left column*/
+.section-left {
+    border-right: 3px solid;
+    border-color: steelblue;
+    padding: 1rem;
+    width: 250px;
+    text-align: right;
+}
+
+.paragraph {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.project-1 {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.project-1 img {
+    opacity: .5;
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid lightskyblue;
+}
+
+.label-1 {
+    display: block;
+    background-color: lightskyblue;
+    color: #13293d;
+    padding: 5px;
+    width: auto;
+    border: 3px solid lightskyblue;
+    justify-content: center;
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+}
+
+.project-2 {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+.project-2 img {
+    opacity: .5;
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid lightskyblue;
+}
+
+.label-2 {
+    background-color: lightskyblue;
+    color: #13293d;
+    padding: 5px;
+    border: 3px solid lightskyblue;
+    width: auto;
+    justify-content: center;
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+}
+
+.project-3 {
+    display: flex;
+    width: 50%;
+    position: relative;
+}
+
+.project-3 img {
+    opacity: .5;
+    background-size: contain;
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid lightskyblue;
+}
+
+.label-3 {
+    background-color: lightskyblue;
+    color: #13293d;
+    padding: 5px;
+    border: 3px solid lightskyblue;
+    width: auto;
+    justify-content: center;
+    position: absolute;
+    bottom: 30%;
+    left: 0%;
+}
+
+.overlay:hover {
+    opacity: 1;
+    background-color: #13293d;
+}
+
+/* Main body and navbar to stack vertically in a column */
+@media screen and (max-width: 768px) {
+
+    main,
+    nav {
+        flex-direction: column;
+    }
+}
