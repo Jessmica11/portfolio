@@ -48,6 +48,8 @@ figcaption {
 
 h2 {
     display: flex;
+    flex-wrap: wrap;
+    align-self: self-start;
     align-items: flex-start;
     justify-content: right;
 }
@@ -104,7 +106,8 @@ section {
 
 .project-1 {
     display: flex;
-    max-height: fit-content;
+    justify-content: flex-end;
+    max-height: auto;
     width: 100%;
     border: 5px solid lightskyblue;
     position: relative;
@@ -114,7 +117,7 @@ section {
     opacity: .3;
     background-size: contain;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 100vh;
 }
 
 .label-1 {
@@ -125,6 +128,7 @@ section {
     color: #13293d;
     padding: 5px;
     width: auto;
+    height: auto;
     position: absolute;
     top: 30%;
     bottom: 30%;
@@ -132,9 +136,9 @@ section {
 }
 
 .project-2 {
-    display: flex;
+ 
     width: 50%;
-    max-height: fit-content;
+    max-height: auto;
     border: 5px solid lightskyblue;
     position: relative;
 }
@@ -155,6 +159,7 @@ section {
     color: #13293d;
     padding: 5px;
     width: auto;
+    height: auto;
     position: absolute;
     top: 30%;
     bottom: 30%;
@@ -162,8 +167,9 @@ section {
 }
 
 .project-3 {
-    display: flex;
+
     width: 50%;
+    max-height: auto;
     position: relative;
     border: 5px solid lightskyblue;
 }
@@ -183,6 +189,7 @@ section {
     color: #13293d;
     padding: 1rem;
     width: auto;
+    height: auto;
     position: absolute;
     top: 30%;
     bottom: 30%;
@@ -196,8 +203,16 @@ section {
 
 /* Main body and navbar to stack vertically in a column */
 @media screen and (max-width: 768px) {
-
     main,
+    .container,
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450) {
+    main,
+    .container,
     nav {
         flex-direction: column;
     }
