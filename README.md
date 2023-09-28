@@ -15,6 +15,11 @@ I settled on flex boxes so the items would line up together
 Then I kept finicking with the structure to simplify the design code and make it more stranger-friendly; also wanted to understand how to stack flex boxes to create a layout
 I've considered using flex: grid, but we didn't over that in class, and I wanted to get to know how flex box worked better
 
+## Portfolio Location
+
+You can find my portfolio here: https://jessmica11.github.io/portfolio/
+![alt text](./assets/portfolio-screenshot.png "Jessica Scheck's Portfolio Site")
+
 ## Acceptance Criteria:
 
 Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
