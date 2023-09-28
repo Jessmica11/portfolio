@@ -147,7 +147,6 @@ section {
     opacity: .3;
     background-size: contain;
     max-width: 100%;
-    height: 100%;
     display: flex;
 }
 
@@ -178,7 +177,7 @@ section {
     opacity: .3;
     background-size: contain;
     max-width: 100%;
-    height: 100%;
+
 }
 
 .headshot {
